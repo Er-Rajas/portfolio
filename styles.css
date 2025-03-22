@@ -31,6 +31,8 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
+    overflow-y: auto;
 }
 
 body {
@@ -48,6 +50,9 @@ body {
     background-size: 100% 100%, 100% 2px;
     transition: background-color 0.3s, color 0.3s;
     position: relative;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body::before {
@@ -1220,4 +1225,53 @@ footer {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: translateY(-2px);
+}
+
+/* Add styles for fullscreen mode */
+:fullscreen {
+    height: 100vh !important;
+    width: 100vw !important;
+}
+
+:-webkit-full-screen {
+    height: 100vh !important;
+    width: 100vw !important;
+}
+
+:-moz-full-screen {
+    height: 100vh !important;
+    width: 100vw !important;
+}
+
+:-ms-fullscreen {
+    height: 100vh !important;
+    width: 100vw !important;
+}
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--section-bg);
+    border: 1px solid var(--border-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--terminal-prompt);
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-color);
+    box-shadow: 0 0 10px var(--terminal-prompt);
+}
+
+/* Firefox scrollbar */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--terminal-prompt) var(--section-bg);
 } 
