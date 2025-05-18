@@ -15,6 +15,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Project data
 const projects = [
     {
+        title: 'State-wise Renewable Energy Forecasting (2017–2023)',
+        description: 'Forecasted renewable energy generation for Indian states using ML (Poisson Regression), achieving 81% R². Included clustering and PCA visualization.',
+        technologies: ['Python', 'Pandas', 'Scikit-learn', 'Statsmodels', 'Seaborn', 'Matplotlib'],
+        link: 'https://github.com/Er-Rajas/Energy-Forecasting',
+        blog: 'https://lablab.ai/event/code-craft-ai-x-dev-hackathon?utm_source=meta+ad&utm_medium=Instagram_Reels&utm_campaign=TRAE+Hackathon+-+registrations&utm_content=TRAE+Hackathon+-+static+4&utm_id=120222266241830594&utm_term=120222364509440594&fbclid=PAZXh0bgNhZW0BMABhZGlkAasdmxexIEIBpzhy5LmNNNuPQv_FpI6rtQvOo1SufF2aetT036bj9BNXstvBgYfIXLbYXyER_aem_kiuIDk12FhMd-Pmo0cR7xw'
+    },
+    {
         title: 'NLP-Based Spam Detection Model',
         description: 'Built a spam detection system using word embeddings (Word2Vec, GloVe). Performed text preprocessing (tokenization, stemming, lemmatization).',
         technologies: ['Python', 'Scikit-Learn', 'Pandas', 'NLP', 'Word2Vec', 'GloVe'],
@@ -76,7 +83,10 @@ function createProjectCards() {
                 <div class="project-tech">
                     ${project.technologies.map(tech => `<span>$ ${tech}</span>`).join('')}
                 </div>
-                <a href="${project.link}" target="_blank" class="btn-primary">$ View Project</a>
+                <div class="project-links">
+                    <a href="${project.link}" target="_blank" class="btn-primary">$ View Project</a>
+                    ${project.blog ? `<a href="${project.blog}" target="_blank" class="btn-secondary"><i class='fas fa-book-open'></i>$ Read Blog</a>` : ''}
+                </div>
             </div>
         `;
         projectsGrid.appendChild(card);

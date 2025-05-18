@@ -53,6 +53,7 @@ body {
     min-height: 100%;
     margin: 0;
     padding: 0;
+    font-size: 1.12rem;
 }
 
 body::before {
@@ -266,10 +267,12 @@ body::before {
 
 /* Sections */
 .section {
-    padding: 5rem 5%;
+    padding: 6rem 5% 6rem 5%;
     background-color: var(--section-bg);
     position: relative;
     border-top: 1px solid var(--border-color);
+    margin-bottom: 2.5rem;
+    animation: fadeIn 0.6s ease-out;
 }
 
 .section::before {
@@ -286,6 +289,10 @@ body::before {
         transparent
     );
     opacity: 0.3;
+}
+
+.section h2, .project-content h3 {
+    font-weight: bold;
 }
 
 .section h2 {
@@ -362,6 +369,18 @@ body::before {
     font-size: 0.9rem;
 }
 
+.project-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn-primary,
+.btn-secondary {
+    width: 100%;
+}
+
 .btn-primary {
     display: inline-block;
     background-color: var(--terminal-prompt);
@@ -374,8 +393,38 @@ body::before {
     transition: all 0.3s;
     text-decoration: none;
     text-align: center;
-    margin-top: auto;
     width: fit-content;
+}
+
+.btn-secondary {
+    display: inline-block;
+    background: transparent;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 4px;
+    padding: 0.75rem 2rem;
+    font-family: var(--terminal-font);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    text-align: center;
+    width: fit-content;
+    position: relative;
+}
+
+.btn-secondary:hover {
+    background: var(--secondary-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 15px rgba(78, 205, 196, 0.3);
+    transform: translateY(-2px);
+    border-color: var(--secondary-color);
+}
+
+.btn-secondary i {
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    vertical-align: middle;
 }
 
 /* Skills Grid */
@@ -674,7 +723,7 @@ footer {
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(30px);
     }
     to {
         opacity: 1;
@@ -1274,4 +1323,20 @@ footer {
 * {
     scrollbar-width: thin;
     scrollbar-color: var(--terminal-prompt) var(--section-bg);
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 } 
