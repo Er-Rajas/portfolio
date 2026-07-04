@@ -3,256 +3,517 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio website showcasing AI, Data Science, and Machine Learning projects">
-    <title>Rajas Bhingarde - Portfolio</title>
+    <title>Rajas Bhingarde | Early-Career ML Engineer for Technical Systems</title>
+    <meta name="description" content="Evidence-led portfolio of Rajas Bhingarde, an early-career ML engineer applying AI to forecasting, sensing, NLP, automation, and technical systems.">
+    <meta name="author" content="Rajas Bhingarde">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#f3f1ec">
+    <link rel="canonical" href="https://er-rajas.github.io/portfolio/">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Rajas Bhingarde | Early-Career ML Engineer">
+    <meta property="og:description" content="Applied AI work across forecasting, NLP, automation, and sensor-informed technical systems, presented with explicit ownership and evidence quality.">
+    <meta property="og:url" content="https://er-rajas.github.io/portfolio/">
+    <meta property="og:site_name" content="Rajas Bhingarde Portfolio">
+    <meta property="og:image" content="https://er-rajas.github.io/portfolio/assets/og-card.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Rajas Bhingarde, early-career ML engineer applying AI to technical systems">
+    <meta property="profile:first_name" content="Rajas">
+    <meta property="profile:last_name" content="Bhingarde">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rajas Bhingarde | Early-Career ML Engineer">
+    <meta name="twitter:description" content="Evidence-led applied AI portfolio spanning forecasting, NLP, automation, and technical systems.">
+    <meta name="twitter:image" content="https://er-rajas.github.io/portfolio/assets/og-card.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600;700&display=swap">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://er-rajas.github.io/portfolio/#rajas-bhingarde",
+                "name": "Rajas Bhingarde",
+                "url": "https://er-rajas.github.io/portfolio/",
+                "email": "mailto:rajasbhingarde@gmail.com",
+                "telephone": "+91-9372869511",
+                "jobTitle": "Early-Career ML Engineer",
+                "description": "Early-career ML engineer applying AI to technical systems, forecasting, sensing, NLP, and real-world engineering problems.",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Dombivli",
+                    "addressRegion": "Maharashtra",
+                    "addressCountry": "IN"
+                },
+                "sameAs": [
+                    "https://github.com/Er-Rajas",
+                    "https://linkedin.com/in/rajas-bhingarde/",
+                    "https://www.kaggle.com/nekonyaa"
+                ],
+                "alumniOf": {
+                    "@type": "CollegeOrUniversity",
+                    "name": "Lokmanya Tilak College of Engineering"
+                },
+                "knowsAbout": [
+                    "Machine Learning",
+                    "Forecasting",
+                    "Natural Language Processing",
+                    "Technical Systems",
+                    "Embedded AI",
+                    "IoT",
+                    "Python"
+                ],
+                "award": [
+                    "1st Prize, Tantragyan 2026 National Level Project Competition",
+                    "ISHRAE Research Grant",
+                    "Aavishkar Merit Certificate"
+                ]
+            },
+            {
+                "@type": "ItemList",
+                "name": "Featured machine learning projects by Rajas Bhingarde",
+                "itemListElement": [
+                    {
+                        "@type": "CreativeWork",
+                        "position": 1,
+                        "name": "AI Smart Cold Storage",
+                        "description": "Research-stage IoT and ML system combining solar forecasting, spoilage detection, and maintenance guidance for cold-storage energy efficiency.",
+                        "creator": { "@id": "https://er-rajas.github.io/portfolio/#rajas-bhingarde" }
+                    },
+                    {
+                        "@type": "SoftwareSourceCode",
+                        "position": 2,
+                        "name": "NLP Spam Detection System",
+                        "codeRepository": "https://github.com/Er-Rajas/Spam-Detection",
+                        "programmingLanguage": "Python",
+                        "creator": { "@id": "https://er-rajas.github.io/portfolio/#rajas-bhingarde" }
+                    },
+                    {
+                        "@type": "CreativeWork",
+                        "position": 3,
+                        "name": "Government Energy Data Automation",
+                        "description": "Prototype extraction workflow for inconsistent government energy reports and downstream forecasting inputs.",
+                        "creator": { "@id": "https://er-rajas.github.io/portfolio/#rajas-bhingarde" }
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">$ Rajas Bhingarde</div>
-            <div class="nav-links">
-                <a href="#about">about</a>
-                <a href="#projects">projects</a>
-                <a href="#experience">experience</a>
-                <a href="#skills">skills</a>
-                <a href="#certifications">certifications</a>
-                <a href="#contact">contact</a>
-            </div>
-        </nav>
-    </header>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <main>
-        <section id="hero" class="hero-section fade-in">
-            <div class="hero-content">
-                <h1><strong>$ Hi, I'm <span class="highlight">Rajas Bhingarde</span> 👋</strong></h1>
-                <p class="subtitle">> Turning Data Into Actionable Insights with AI & Cloud</p>
-                <p class="hero-description">> AI & Data Science Enthusiast | Machine Learning Engineer 🤖</p>
-                <div class="hero-quote">
-                    <p>"I'm just your friendly neighborhood tech Spider-Man."</p>
-                    <span class="quote-cursor">|</span>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/Er-Rajas" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/rajas-bhingarde/" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="https://www.kaggle.com/nekonyaa" target="_blank" aria-label="Kaggle">
-                        <i class="fab fa-kaggle"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="section fade-in">
-            <h2><strong>$ About Me 👨‍💻</strong></h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="terminal-text">Hello World! I'm a passionate Data Scientist who loves turning complex data into actionable insights 🎯</p>
-                    <p class="terminal-text">Driven by curiosity and innovation, I specialize in building intelligent solutions with AI, ML, and cloud technologies.</p>
-                    <p class="terminal-text">Currently exploring cutting-edge NLP and predictive modeling to solve real-world problems.</p>
-                    <div class="skills-summary">
-                        <h3><strong>$ Technical Skills 💻</strong></h3>
-                        <p>> Python, C++, Pandas, NumPy, Scikit-Learn, NLTK, XGBoost, Plotly, BeautifulSoup</p>
-                        <h3><strong>$ Soft Skills 🤝</strong></h3>
-                        <p>> Problem-solving, teamwork, leadership, adaptability, communication</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="section">
-            <h2>$ Projects 🛠️</h2>
-            <div class="projects-grid">
-                <!-- Project cards will be dynamically added here -->
-            </div>
-        </section>
-
-        <section id="experience" class="section">
-            <h2>$ Experience 💼</h2>
-            <div class="experience-timeline">
-                <div class="experience-item">
-                    <h3>🤖 AI Intern</h3>
-                    <div class="experience-date">$ EduNet Foundation | AICTE Virtual Internship (Microsoft AI Program) | April 2025 - May 2025</div>
-                    <div class="experience-description">
-                        <p>Selected for a national AICTE-Microsoft internship. Developed a state-wise renewable energy forecasting model for India (2017–2023) using Poisson Regression, KMeans, and PCA on Azure. Gained hands-on experience in ML, AI, and cloud tools. Achieved 81% accuracy on real government data.</p>
-                    </div>
-                    <div class="experience-tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Scikit-learn</span>
-                        <span class="tech-tag">Statsmodels</span>
-                        <span class="tech-tag">Microsoft Azure</span>
-                        <span class="tech-tag">Matplotlib</span>
-                        <span class="tech-tag">Pandas</span>
-                    </div>
-                </div>
-                <div class="experience-item">
-                    <h3>🔬 Data Science Intern</h3>
-                    <div class="experience-date">$ Nova Nectar Pvt. Ltd. | June 2024 - July 2024</div>
-                    <div class="experience-description">
-                        <p>Developed fake news detection and face recognition models using machine learning.</p>
-                        <p>Applied data preprocessing and feature engineering to improve model efficiency.</p>
-                        <p>Contributed to enhancing system reliability and automation in AI-based solutions.</p>
-                    </div>
-                    <div class="experience-tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">Computer Vision</span>
-                        <span class="tech-tag">NLP</span>
-                    </div>
-                </div>
-
-                <div class="experience-item">
-                    <h3>📊 Data Science Intern</h3>
-                    <div class="experience-date">$ CodTech IT Solutions | Dec 2024 - Jan 2025</div>
-                    <div class="experience-description">
-                        <p>Conducted exploratory data analysis (EDA) on large datasets for spam detection.</p>
-                        <p>Implemented classification techniques using Python to improve spam identification accuracy.</p>
-                        <p>Analyzed data distributions and developed insights to optimize model performance.</p>
-                    </div>
-                    <div class="experience-tech-stack">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Scikit-learn</span>
-                        <span class="tech-tag">Pandas</span>
-                        <span class="tech-tag">Data Analysis</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="education" class="section">
-            <h2>$ Education 🎓</h2>
-            <div class="education-item">
-                <h3>Lokmanya Tilak College of Engineering</h3>
-                <div class="education-date">$ 2021 - 2026</div>
-                <div class="education-description">
-                    <p>B.E in Electrical Engineering</p>
-                    <p>Minor in Blockchain Technology</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="section">
-            <h2>$ Skills 🎯</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>💻 Programming</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>C++</li>
-                        <li>SQL</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>🤖 ML & AI</h3>
-                    <ul>
-                        <li>Scikit-Learn</li>
-                        <li>TensorFlow</li>
-                        <li>XGBoost</li>
-                        <li>Statsmodels</li>
-                        <li>NLP (Word2Vec, GloVe)</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>📊 Data Analysis</h3>
-                    <ul>
-                        <li>Pandas</li>
-                        <li>NumPy</li>
-                        <li>BeautifulSoup</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>📈 Visualization</h3>
-                    <ul>
-                        <li>Plotly</li>
-                        <li>Matplotlib</li>
-                        <li>Seaborn</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>🧩 Familiar With</h3>
-                    <ul>
-                        <li>Microsoft Azure</li>
-                        <li>Cloud Computing</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="certifications" class="section">
-            <h2>$ Certifications & Achievements 🏆</h2>
-            <div class="certification-card">
-                <h3>🥇 Kaggle Competition Participant</h3>
-                <div class="certification-date">$ 2025</div>
-                <div class="certification-description">
-                    Participated in "Catch Me If You Can" competition 🎯
-                </div>
-                <a href="https://www.kaggle.com/nekonyaa" class="view-profile-btn">$ View Profile</a>
-            </div>
-            
-            <div class="certification-card">
-                <h3>👥 LTCE Alumni Cell Coordinator</h3>
-                <div class="certification-date">$ 2024</div>
-                <div class="certification-description">
-                    Organized events, managed outreach, strengthened alumni relations 🤝
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section">
-            <h2>$ Contact Me 📬</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <p><i class="fab fa-google"></i> rajasbhingarde@gmail.com</p>
-                    <p><i class="fab fa-linkedin"></i> linkedin.com/in/rajas-bhingarde/</p>
-                    <p><i class="fab fa-github"></i> github.com/Er-Rajas/</p>
-                    <p><i class="fab fa-kaggle"></i> kaggle.com/nekonyaa</p>
-                </div>
-                <form id="contact-form">
-                    <div class="form-group">
-                        <label for="name">$ Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">$ Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">$ Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-primary">$ Send Message</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p class="footer-text">
-                <span class="terminal-prompt">$</span> echo "Made with <span class="footer-heart">❤️</span> and <span class="footer-code">{ code }</span>"
-            </p>
-            <div class="footer-social">
-                <a href="https://github.com/Er-Rajas" target="_blank" aria-label="GitHub" class="social-link">
-                    <i class="fab fa-github"></i>
+    <div class="page-shell">
+        <header class="site-header">
+            <nav class="nav" aria-label="Primary navigation">
+                <a class="brand" href="#top" aria-label="Rajas Bhingarde, home">
+                    <span class="brand-mark" aria-hidden="true">RB</span>
+                    <span class="brand-lockup">
+                        <span class="brand-name">Rajas Bhingarde</span>
+                        <span class="brand-role">Early-Career ML Engineer</span>
+                    </span>
                 </a>
-                <a href="https://linkedin.com/in/rajas-bhingarde/" target="_blank" aria-label="LinkedIn" class="social-link">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://www.kaggle.com/nekonyaa" target="_blank" aria-label="Kaggle" class="social-link">
-                    <i class="fab fa-kaggle"></i>
-                </a>
-            </div>
-            <p class="footer-copyright">
-                <span class="terminal-prompt">></span> Rajas Bhingarde © 2025 | Powered by GitHub Pages
-            </p>
-        </div>
-    </footer>
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+                    <span class="menu-label">Menu</span>
+                    <span class="menu-icon" aria-hidden="true"></span>
+                </button>
+                <div class="nav-links" id="nav-links">
+                    <a href="#work" data-nav="work">Featured Work</a>
+                    <a href="#judgment" data-nav="judgment">Technical Judgment</a>
+                    <a href="#experience" data-nav="experience">Experience</a>
+                    <a href="#evidence" data-nav="evidence">Evidence</a>
+                    <a href="#contact" data-nav="contact">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+        <main id="main">
+            <section class="candidate-snapshot section" id="top" data-nav-section="">
+                <div class="snapshot-grid">
+                    <div class="snapshot-main">
+                        <p class="eyebrow">Candidate Snapshot</p>
+                        <div class="intro-band">
+                            <span>Rajas Bhingarde</span>
+                            <span>Dombivli, Maharashtra</span>
+                            <span>Open to ML, Applied AI, and Data Science roles</span>
+                        </div>
+                        <h1>Early-career ML engineer applying AI to technical systems shaped by real-world constraints.</h1>
+                        <p class="snapshot-summary">
+                            Electrical engineering graduate transitioning into AI and data science, with work across forecasting,
+                            NLP, automation, cloud AI, and sensor-informed research systems. I focus on useful models,
+                            measurable outcomes, and engineering decisions that hold up outside notebooks.
+                        </p>
+                        <div class="role-strip" aria-label="Best-fit roles">
+                            <span>ML Engineer</span>
+                            <span>Applied AI Engineer</span>
+                            <span>Data Scientist</span>
+                        </div>
+                        <div class="hero-actions">
+                            <a class="btn btn-primary" href="#work">View featured work</a>
+                            <a class="btn btn-secondary" href="assets/docs/rajas-bhingarde-resume.pdf" target="_blank" rel="noreferrer" aria-label="Open resume PDF in a new tab">Resume PDF</a>
+                            <a class="btn btn-secondary" href="https://github.com/Er-Rajas" target="_blank" rel="noreferrer" aria-label="Open GitHub profile in a new tab">GitHub</a>
+                        </div>
+                    </div>
+                    <aside class="snapshot-sidebar" aria-label="Quick evidence">
+                        <article class="snapshot-panel snapshot-panel-primary">
+                            <p class="panel-label">Immediate fit</p>
+                            <h2>Applied AI for energy, sensing, forecasting, NLP, and operational automation.</h2>
+                            <p>Most credible where machine learning meets messy data, physical systems, or process constraints.</p>
+                        </article>
+                        <article class="snapshot-panel snapshot-panel-secondary">
+                            <p class="panel-label">Current emphasis</p>
+                            <ul class="summary-list">
+                                <li>Structured experimentation over hype-driven prototyping</li>
+                                <li>Clear ownership and evidence-quality framing</li>
+                                <li>Research-informed systems thinking for early-career roles</li>
+                            </ul>
+                        </article>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="fast-proof section" aria-labelledby="fast-proof-title">
+                <div class="fast-proof-header">
+                    <p class="eyebrow" id="fast-proof-title">Fast Proof</p>
+                    <p class="section-note">The fastest reasons to move this candidate forward.</p>
+                </div>
+                <div class="proof-strip">
+                    <article class="proof-item">
+                        <strong class="proof-value">1st Prize</strong>
+                        <span class="proof-label">Tantragyan 2026 national-level hardware competition</span>
+                    </article>
+                    <article class="proof-item">
+                        <strong class="proof-value">93%</strong>
+                        <span class="proof-label">NLP spam accuracy, about 8 points above TF-IDF baseline</span>
+                    </article>
+                    <article class="proof-item">
+                        <strong class="proof-value">3</strong>
+                        <span class="proof-label">Internships across applied AI, data science, and LLM workflows</span>
+                    </article>
+                    <article class="proof-item">
+                        <strong class="proof-value">₹40K</strong>
+                        <span class="proof-label">ISHRAE grant supporting cold-storage validation</span>
+                    </article>
+                    <article class="proof-item">
+                        <strong class="proof-value">Design Reg.</strong>
+                        <span class="proof-label">Published registration for the cold-storage system</span>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section work-section" id="work" data-nav-section="work">
+                <div class="section-heading section-heading-split">
+                    <div>
+                        <p class="eyebrow">Featured Work</p>
+                        <h2>Flagship projects structured around problem, contribution, constraints, and evidence.</h2>
+                    </div>
+                    <div class="reading-modes" aria-label="Project reading modes">
+                        <p><span>Quick scan</span> Outcome, role, workflow, evidence</p>
+                        <p><span>Technical review</span> Decisions, constraints, evaluation</p>
+                    </div>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card" id="cold-storage">
+                        <div class="project-overview">
+                            <div class="project-title-row">
+                                <div>
+                                    <p class="project-index">Case 01 / Research system</p>
+                                    <p class="project-meta">2024-2026 · 3-person team</p>
+                                    <h3>AI Smart Cold Storage</h3>
+                                </div>
+                                <span class="project-evidence"><span aria-hidden="true"></span>Simulated</span>
+                            </div>
+                            <p class="project-summary">An IoT and ML research system combining solar forecasting, spoilage detection, and maintenance guidance for more energy-efficient cold storage.</p>
+                            <dl class="project-signal-grid">
+                                <div>
+                                    <dt>Outcome</dt>
+                                    <dd>Projected 20-30% power reduction</dd>
+                                </div>
+                                <div>
+                                    <dt>Ownership</dt>
+                                    <dd>AI pipeline lead on a 3-person team</dd>
+                                </div>
+                            </dl>
+
+                            <div class="workflow-trace" data-trace>
+                                <div class="workflow-heading">
+                                    <div>
+                                        <p class="workflow-label">Evidence Trace</p>
+                                        <p>Follow information from operating context to validated claim.</p>
+                                    </div>
+                                    <span class="workflow-hint">Select a stage</span>
+                                </div>
+                                <ol aria-label="Conceptual workflow for AI Smart Cold Storage">
+                                    <li>
+                                        <button class="trace-step is-active" type="button" aria-pressed="true" data-note="Gas-sensor readings, vision inputs, solar conditions, and compressor dataplates define the documented operating context.">
+                                            <span class="trace-role">Input</span>
+                                            <span>Sensor + energy data</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="trace-step" type="button" aria-pressed="false" data-note="LSTM solar forecasting and a two-stage gas-sensor plus ResNet50 process support forecasting and spoilage analysis.">
+                                            <span class="trace-role">Decision</span>
+                                            <span>Forecast + detect</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="trace-step" type="button" aria-pressed="false" data-note="The system concept turns model outputs into pre-cooling decisions and RAG-assisted maintenance guidance.">
+                                            <span class="trace-role">Output</span>
+                                            <span>Operational guidance</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="trace-step" type="button" aria-pressed="false" data-note="The energy claim remains projected: simulation and compressor-dataplate validation support the estimate, alongside a grant, design registration, and competition result.">
+                                            <span class="trace-role">Evidence</span>
+                                            <span>Simulation + review</span>
+                                        </button>
+                                    </li>
+                                </ol>
+                                <p class="trace-readout" aria-live="polite">Gas-sensor readings, vision inputs, solar conditions, and compressor dataplates define the documented operating context.</p>
+                            </div>
+
+                            <div class="project-overview-footer">
+                                <div class="project-tags" aria-label="Technologies and domains">
+                                    <span>Forecasting</span><span>IoT / ML</span><span>RAG</span><span>Energy Systems</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <details class="project-review">
+                            <summary class="project-toggle">
+                                <span class="when-closed">Open technical review</span>
+                                <span class="when-open">Close technical review</span>
+                                <span class="toggle-icon" aria-hidden="true"></span>
+                            </summary>
+                            <div class="deep-dive-inner">
+                                <div class="deep-dive-heading">
+                                    <div><p class="panel-label">Technical Review</p><h4>Reasoning, limits, and supporting evidence</h4></div>
+                                    <span>Evidence quality: Simulated</span>
+                                </div>
+                                <dl class="review-matrix">
+                                    <div><dt>Problem</dt><dd>Cold-storage operations face power consumption pressure and spoilage risk, especially where energy use and environmental control need tighter decision support.</dd></div>
+                                    <div><dt>Contribution</dt><dd>Designed the AI pipeline, including LSTM-based solar forecasting, machine-learning logic for spoilage analysis, and the RAG-assisted maintenance guidance layer.</dd></div>
+                                    <div><dt>Constraints</dt><dd>Research-stage work required cross-disciplinary coordination, hardware coupling, and explicit separation between projected benefit and deployment evidence.</dd></div>
+                                    <div><dt>Evaluation</dt><dd>Simulation and compressor-dataplate validation support projected 20-30% power reduction potential. External evidence includes a national competition win, grant, and design registration.</dd></div>
+                                </dl>
+                                <section class="engineering-decisions" aria-labelledby="cold-decisions">
+                                    <div class="decision-intro"><p class="panel-label">Engineering Decisions</p><h4 id="cold-decisions">Choices grounded in documented project scope</h4></div>
+                                    <dl>
+                                        <div><dt>Selected approach</dt><dd>LSTM forecasting supports pre-cooling, a gas-sensor and ResNet50 sequence handles two-stage spoilage detection, and RAG supports explainable maintenance guidance.</dd></div>
+                                        <div><dt>Alternatives in scope</dt><dd>The documented two-stage design avoids treating sensor readings or vision as a single spoilage signal. No broader architecture comparison is claimed.</dd></div>
+                                        <div><dt>Decision constraints</dt><dd>Hardware coupling, noisy physical signals, and research-stage validation favored modular outputs that could be assessed separately.</dd></div>
+                                        <div><dt>What the work showed</dt><dd>System-level benefit needs separate validation from model behavior; the power reduction remains explicitly projected.</dd></div>
+                                    </dl>
+                                </section>
+                                <div class="project-evidence-row">
+                                    <div><p class="panel-label">Evidence & links</p><div class="project-links"><a class="project-link" href="assets/docs/rajas-bhingarde-resume.pdf" target="_blank" rel="noreferrer" aria-label="Open resume details in a new tab">Resume details <span aria-hidden="true">↗</span></a><a class="project-link" href="assets/docs/rajas-bhingarde-accomplishments.pdf" target="_blank" rel="noreferrer" aria-label="Open accomplishments PDF in a new tab">Accomplishments PDF <span aria-hidden="true">↗</span></a></div></div>
+                                </div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="project-card" id="spam-detection">
+                        <div class="project-overview">
+                            <div class="project-title-row">
+                                <div>
+                                    <p class="project-index">Case 02 / NLP classification</p>
+                                    <p class="project-meta">10,000+ messages · Individual project</p>
+                                    <h3>NLP Spam Detection System</h3>
+                                </div>
+                                <span class="project-evidence"><span aria-hidden="true"></span>Benchmarked</span>
+                            </div>
+                            <p class="project-summary">A text-classification pipeline benchmarking Word2Vec and GloVe embeddings across five classifiers on more than 10,000 messages.</p>
+                            <dl class="project-signal-grid">
+                                <div><dt>Outcome</dt><dd>93% accuracy, about 8 points above baseline</dd></div>
+                                <div><dt>Ownership</dt><dd>End-to-end individual project</dd></div>
+                            </dl>
+
+                            <div class="workflow-trace" data-trace>
+                                <div class="workflow-heading">
+                                    <div><p class="workflow-label">Evidence Trace</p><p>Follow the benchmark from dataset to evaluation.</p></div>
+                                    <span class="workflow-hint">Select a stage</span>
+                                </div>
+                                <ol aria-label="Conceptual workflow for NLP Spam Detection System">
+                                    <li><button class="trace-step is-active" type="button" aria-pressed="true" data-note="The benchmark uses more than 10,000 noisy, everyday text messages rather than idealized examples."><span class="trace-role">Input</span><span>10K+ messages</span></button></li>
+                                    <li><button class="trace-step" type="button" aria-pressed="false" data-note="NLTK preprocessing creates a consistent input pipeline before representation and classifier comparisons."><span class="trace-role">Process</span><span>NLTK preparation</span></button></li>
+                                    <li><button class="trace-step" type="button" aria-pressed="false" data-note="Word2Vec and GloVe embeddings are compared across five classifiers, with TF-IDF retained as the explicit baseline."><span class="trace-role">Decision</span><span>Embeddings + models</span></button></li>
+                                    <li><button class="trace-step" type="button" aria-pressed="false" data-note="The result is reported with 93% accuracy, roughly eight percentage points above TF-IDF, alongside precision, recall, F1, and AUC evaluation."><span class="trace-role">Evidence</span><span>Multi-metric review</span></button></li>
+                                </ol>
+                                <p class="trace-readout" aria-live="polite">The benchmark uses more than 10,000 noisy, everyday text messages rather than idealized examples.</p>
+                            </div>
+
+                            <div class="project-overview-footer"><div class="project-tags" aria-label="Technologies and domains"><span>NLP</span><span>Benchmarking</span><span>Python</span><span>scikit-learn</span></div></div>
+                        </div>
+
+                        <details class="project-review">
+                            <summary class="project-toggle"><span class="when-closed">Open technical review</span><span class="when-open">Close technical review</span><span class="toggle-icon" aria-hidden="true"></span></summary>
+                            <div class="deep-dive-inner">
+                                <div class="deep-dive-heading"><div><p class="panel-label">Technical Review</p><h4>Reasoning, limits, and supporting evidence</h4></div><span>Evidence quality: Benchmarked</span></div>
+                                <dl class="review-matrix">
+                                    <div><dt>Problem</dt><dd>Spam detection needs robust classification under noisy, everyday text rather than idealized examples.</dd></div>
+                                    <div><dt>Contribution</dt><dd>Built the end-to-end pipeline, prepared text data, compared Word2Vec and GloVe embeddings, and evaluated five classifiers against a TF-IDF baseline.</dd></div>
+                                    <div><dt>Constraints</dt><dd>The comparison needed consistent preprocessing, interpretable baselines, and enough evaluation structure to avoid presenting one-off tuning as methodology.</dd></div>
+                                    <div><dt>Evaluation</dt><dd>Reached 93% accuracy, roughly 8 percentage points above TF-IDF. The repository includes precision, recall, F1, AUC, and a model comparison table.</dd></div>
+                                </dl>
+                                <section class="engineering-decisions" aria-labelledby="spam-decisions">
+                                    <div class="decision-intro"><p class="panel-label">Engineering Decisions</p><h4 id="spam-decisions">Choices grounded in documented project scope</h4></div>
+                                    <dl>
+                                        <div><dt>Selected approach</dt><dd>Compared Word2Vec and GloVe representations across five classifiers through one consistent preprocessing and evaluation pipeline.</dd></div>
+                                        <div><dt>Alternatives in scope</dt><dd>TF-IDF served as an explicit baseline rather than an unmeasured alternative, making embedding-based improvement easier to assess.</dd></div>
+                                        <div><dt>Decision constraints</dt><dd>Noisy text and fair comparison favored repeatable preparation and the same evaluation structure across models.</dd></div>
+                                        <div><dt>What the work showed</dt><dd>A headline accuracy is more credible when the baseline, dataset scale, and multiple evaluation measures remain visible.</dd></div>
+                                    </dl>
+                                </section>
+                                <div class="project-evidence-row"><div><p class="panel-label">Evidence & links</p><div class="project-links"><a class="project-link" href="https://github.com/Er-Rajas/Spam-Detection" target="_blank" rel="noreferrer" aria-label="Open the spam detection GitHub repository in a new tab">GitHub repository <span aria-hidden="true">↗</span></a></div></div></div>
+                            </div>
+                        </details>
+                    </article>
+
+                    <article class="project-card" id="energy-automation">
+                        <div class="project-overview">
+                            <div class="project-title-row">
+                                <div>
+                                    <p class="project-index">Case 03 / Data automation</p>
+                                    <p class="project-meta">Azure internship · 50+ reports</p>
+                                    <h3>Government Energy Data Automation</h3>
+                                </div>
+                                <span class="project-evidence"><span aria-hidden="true"></span>Prototype</span>
+                            </div>
+                            <p class="project-summary">A flexible extraction workflow converting inconsistent government energy reports into usable inputs for downstream forecasting.</p>
+                            <dl class="project-signal-grid">
+                                <div><dt>Outcome</dt><dd>50+ reports, weeks of parsing removed</dd></div>
+                                <div><dt>Ownership</dt><dd>Parser and extraction workflow owner</dd></div>
+                            </dl>
+
+                            <div class="workflow-trace" data-trace>
+                                <div class="workflow-heading">
+                                    <div><p class="workflow-label">Evidence Trace</p><p>Follow inconsistent reports into usable data.</p></div>
+                                    <span class="workflow-hint">Select a stage</span>
+                                </div>
+                                <ol aria-label="Conceptual workflow for Government Energy Data Automation">
+                                    <li><button class="trace-step is-active" type="button" aria-pressed="true" data-note="More than 50 government energy reports arrived with inconsistent tables, embedded text, and image-heavy layouts."><span class="trace-role">Input</span><span>Government reports</span></button></li>
+                                    <li><button class="trace-step" type="button" aria-pressed="false" data-note="Recurring structures were reverse-engineered into three documented report types instead of assuming one uniform layout."><span class="trace-role">Analysis</span><span>Pattern detection</span></button></li>
+                                    <li><button class="trace-step" type="button" aria-pressed="false" data-note="A flexible BeautifulSoup-based parser handled the documented report variations and reduced repetitive manual extraction."><span class="trace-role">Decision</span><span>Flexible extraction</span></button></li>
+                                    <li><button class="trace-step" type="button" aria-pressed="false" data-note="The repeatable workflow removed weeks of manual parsing and produced more reliable inputs for later forecasting analysis."><span class="trace-role">Evidence</span><span>Forecast-ready data</span></button></li>
+                                </ol>
+                                <p class="trace-readout" aria-live="polite">More than 50 government energy reports arrived with inconsistent tables, embedded text, and image-heavy layouts.</p>
+                            </div>
+
+                            <div class="project-overview-footer"><div class="project-tags" aria-label="Technologies and domains"><span>Automation</span><span>Data Pipelines</span><span>Energy</span><span>Parsing</span></div></div>
+                        </div>
+
+                        <details class="project-review">
+                            <summary class="project-toggle"><span class="when-closed">Open technical review</span><span class="when-open">Close technical review</span><span class="toggle-icon" aria-hidden="true"></span></summary>
+                            <div class="deep-dive-inner">
+                                <div class="deep-dive-heading"><div><p class="panel-label">Technical Review</p><h4>Reasoning, limits, and supporting evidence</h4></div><span>Evidence quality: Prototype</span></div>
+                                <dl class="review-matrix">
+                                    <div><dt>Problem</dt><dd>Manual extraction from public power-sector documents was slow and error-prone because reports varied across tables, embedded text, and image-heavy formats.</dd></div>
+                                    <div><dt>Contribution</dt><dd>Reverse-engineered report patterns and built a BeautifulSoup-based extraction pipeline across more than 50 documents.</dd></div>
+                                    <div><dt>Constraints</dt><dd>Input quality and layouts varied by source, while the output needed to remain useful for downstream forecasting work.</dd></div>
+                                    <div><dt>Evaluation</dt><dd>The repeatable workflow removed weeks of manual parsing and improved dataset-preparation reliability. No deployment or public repository is claimed.</dd></div>
+                                </dl>
+                                <section class="engineering-decisions" aria-labelledby="energy-decisions">
+                                    <div class="decision-intro"><p class="panel-label">Engineering Decisions</p><h4 id="energy-decisions">Choices grounded in documented project scope</h4></div>
+                                    <dl>
+                                        <div><dt>Selected approach</dt><dd>Reverse-engineered recurring patterns and built a flexible BeautifulSoup parser handling three documented report types.</dd></div>
+                                        <div><dt>Alternatives in scope</dt><dd>A single rigid extraction path would not cover the documented mix of tables, embedded text, and image-heavy formats.</dd></div>
+                                        <div><dt>Decision constraints</dt><dd>Source inconsistency and forecasting-ready output made adaptable parsing more important than optimizing for one layout.</dd></div>
+                                        <div><dt>What the work showed</dt><dd>Handling source variation is part of operational data engineering rather than a minor preprocessing detail.</dd></div>
+                                    </dl>
+                                </section>
+                                <div class="project-evidence-row"><div><p class="panel-label">Evidence & links</p><p class="link-unavailable">No public project artifact listed. Evidence is summarized in the resume.</p></div></div>
+                            </div>
+                        </details>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section judgment-section" id="judgment" data-nav-section="judgment">
+                <div class="section-heading">
+                    <p class="eyebrow">Technical Judgment</p>
+                    <h2>How I approach constrained, messy, real-world ML work.</h2>
+                </div>
+                <div class="judgment-grid">
+                    <div class="judgment-intro"><p>I work from data quality, operating context, and evaluation discipline before model novelty. The goal is not just building something impressive in isolation, but building something credible under practical constraints.</p></div>
+                    <div class="judgment-cards">
+                        <article class="judgment-card"><p class="principle-index">01</p><div><h3>Start from operating conditions</h3><p>I scope technical work around what the system has to tolerate: noisy inputs, limited data consistency, hardware coupling, or real process constraints.</p></div></article>
+                        <article class="judgment-card"><p class="principle-index">02</p><div><h3>Separate claims from evidence quality</h3><p>I distinguish between prototype, simulated, benchmarked, and applied results so the work stays honest about what was proven.</p></div></article>
+                        <article class="judgment-card"><p class="principle-index">03</p><div><h3>Show personal ownership clearly</h3><p>For collaborative work, I isolate what I designed or implemented so reviewers can judge my contribution without guessing.</p></div></article>
+                        <article class="judgment-card"><p class="principle-index">04</p><div><h3>Prefer evaluation over hype</h3><p>I treat baselines, measurable outcomes, and practical usefulness as more important than fashionable models without a clear reason.</p></div></article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section timeline-section" id="experience" data-nav-section="experience">
+                <div class="section-heading"><p class="eyebrow">Experience</p><h2>Internships framed by scope, ownership, and result.</h2></div>
+                <div class="timeline">
+                    <article class="timeline-item"><div class="timeline-meta"><p class="timeline-period">Jun-Jul 2025</p><p class="timeline-org">Vault of Code · Remote</p></div><div class="timeline-copy"><h3>AI & Prompt Engineering Intern</h3><p>Integrated Mistral through Ollama into an application workflow, built a structured response parser for automated task routing, and reduced manual review by an estimated 3-4 hours per day.</p></div></article>
+                    <article class="timeline-item"><div class="timeline-meta"><p class="timeline-period">Apr-May 2025</p><p class="timeline-org">Edunet Foundation · Remote</p></div><div class="timeline-copy"><h3>AI Azure Intern</h3><p>Built a flexible scraping and parsing pipeline for more than 50 inconsistent government energy reports, replacing slow manual extraction and improving downstream forecasting readiness.</p></div></article>
+                    <article class="timeline-item"><div class="timeline-meta"><p class="timeline-period">Dec 2024-Jan 2025</p><p class="timeline-org">CodTech IT Solutions · Remote</p></div><div class="timeline-copy"><h3>Data Science Intern</h3><p>Developed an NLP classification workflow using Word2Vec and GloVe, with visual analysis and model comparison on unstructured text datasets.</p></div></article>
+                </div>
+            </section>
+
+            <section class="section evidence-section" id="evidence" data-nav-section="evidence">
+                <div class="section-heading"><p class="eyebrow">Evidence</p><h2>Recognition, credentials, IP, and recruiter-ready artifacts.</h2></div>
+                <div class="evidence-layout">
+                    <div class="evidence-stack">
+                        <article class="evidence-card"><p class="panel-label">Award · 2026</p><h3>Tantragyan national-level hardware winner</h3><p>Won 1st Prize in the Hardware Category for the AI Smart Cold Storage System.</p><div class="evidence-meta"><span>Recognition</span><span>Cold Storage System</span></div></article>
+                        <article class="evidence-card"><p class="panel-label">Grant</p><h3>ISHRAE research grant</h3><p>Secured a ₹40,000 grant supporting cold-storage research and validation.</p><div class="evidence-meta"><span>Research Support</span><span>Energy Systems</span></div></article>
+                        <article class="evidence-card"><p class="panel-label">Intellectual Property</p><h3>Registered design publication</h3><p>Published design registration for the AI Smart Cold Storage System under Design No. 496644-001.</p><div class="evidence-meta"><span>Formal Artifact</span><span>Cold Storage</span></div></article>
+                        <article class="evidence-card"><p class="panel-label">Credential · 2025</p><h3>Google Cloud AI / ML skill badges</h3><p>Completed eight badges covering Gemini API, Vertex AI, multimodal RAG, and ML engineering preparation.</p><div class="evidence-meta"><span>Google Cloud</span><span>Vertex AI</span><span>GenAI</span></div></article>
+                    </div>
+                    <aside class="artifact-panel" aria-label="Documents and profiles">
+                        <p class="panel-label">Artifacts</p><h3>Documents and proof surfaces</h3>
+                        <div class="artifact-list">
+                            <a class="artifact-item" href="assets/docs/rajas-bhingarde-resume.pdf" target="_blank" rel="noreferrer" aria-label="Open resume PDF in a new tab"><span class="artifact-type">PDF</span><span class="artifact-copy"><strong>Resume</strong><span>Role-targeted professional summary and experience record.</span></span><span class="external-mark" aria-hidden="true">↗</span></a>
+                            <a class="artifact-item" href="assets/docs/rajas-bhingarde-accomplishments.pdf" target="_blank" rel="noreferrer" aria-label="Open accomplishments PDF in a new tab"><span class="artifact-type">PDF</span><span class="artifact-copy"><strong>Accomplishments</strong><span>Visual supporting record. Key claims are also available as HTML on this page.</span></span><span class="external-mark" aria-hidden="true">↗</span></a>
+                            <a class="artifact-item" href="https://github.com/Er-Rajas" target="_blank" rel="noreferrer" aria-label="Open GitHub profile in a new tab"><span class="artifact-type">WEB</span><span class="artifact-copy"><strong>GitHub</strong><span>Repositories and project code supporting featured work.</span></span><span class="external-mark" aria-hidden="true">↗</span></a>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="section capabilities-section" id="capabilities" data-nav-section="evidence">
+                <div class="section-heading"><p class="eyebrow">Capabilities In Context</p><h2>Capabilities tied to work, not listed as isolated tools.</h2></div>
+                <div class="capability-grid">
+                    <article class="capability-card"><p class="panel-label">Forecasting under constraints</p><h3>Time-series reasoning tied to system use</h3><p>Used LSTM-based solar forecasting within an energy-efficiency concept where prediction informed operational decisions.</p><div class="capability-meta"><span>Cold Storage</span><span>Forecasting</span><span>Energy</span></div></article>
+                    <article class="capability-card"><p class="panel-label">NLP classification</p><h3>Benchmark-driven text modeling</h3><p>Structured NLP work around baseline comparison, embedding choices, and measurable improvement.</p><div class="capability-meta"><span>Spam Detection</span><span>Embeddings</span><span>Evaluation</span></div></article>
+                    <article class="capability-card"><p class="panel-label">AI + sensor workflows</p><h3>Machine learning adjacent to physical systems</h3><p>Worked on AI concepts that interact with hardware, sensing, and environmental constraints.</p><div class="capability-meta"><span>IoT</span><span>ESP32</span><span>Systems Thinking</span></div></article>
+                    <article class="capability-card"><p class="panel-label">Operational automation</p><h3>Reducing manual work with structured pipelines</h3><p>Built report-extraction and LLM-assisted routing workflows where consistency mattered more than novelty.</p><div class="capability-meta"><span>Automation</span><span>Parsing</span><span>LLM Workflow</span></div></article>
+                </div>
+            </section>
+
+            <section class="section about-section" id="about" data-nav-section="evidence">
+                <div class="section-heading"><p class="eyebrow">About</p><h2>Engineering foundation first, curiosity disciplined by evidence.</h2></div>
+                <div class="about-layout">
+                    <div class="about-copy"><p>My electrical engineering background shaped how I think about systems: signals, operating limits, instrumentation, and why real environments rarely behave like clean datasets. That foundation pulled me toward applied AI rather than purely abstract model work.</p><p>I am especially interested in forecasting, NLP pipelines, automation, and sensor-informed systems. Astrophotography influences my mindset more than my aesthetics; it taught me patience, calibration, and respect for noisy signals.</p></div>
+                    <div class="about-facts">
+                        <article class="fact-card"><p class="panel-label">Education</p><h3>B.E. Electrical Engineering</h3><p>Lokmanya Tilak College of Engineering, with a transition into AI and data science through applied project work.</p></article>
+                        <article class="fact-card"><p class="panel-label">Working style</p><h3>Methodical and evidence-led</h3><p>I prefer clear evaluation criteria, scoped contributions, and systems thinking over inflated technical claims.</p></article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section contact-section" id="contact" data-nav-section="contact">
+                <div class="section-heading"><p class="eyebrow">Contact / Handoff</p><h2>Ready for recruiter review and deeper technical discussion.</h2></div>
+                <div class="contact-panel">
+                    <div class="contact-copy"><p class="contact-lead">Best fit for ML engineering, applied AI, and data science roles involving technical systems, forecasting, NLP, or operational automation.</p><ul class="contact-list"><li><a href="mailto:rajasbhingarde@gmail.com">rajasbhingarde@gmail.com</a></li><li><a href="tel:+919372869511">+91 9372869511</a></li><li>Dombivli, Maharashtra, India</li></ul></div>
+                    <div class="contact-actions"><a class="btn btn-primary" href="mailto:rajasbhingarde@gmail.com">Email Rajas</a><a class="btn btn-secondary" href="https://linkedin.com/in/rajas-bhingarde/" target="_blank" rel="noreferrer" aria-label="Open LinkedIn profile in a new tab">LinkedIn</a><a class="btn btn-secondary" href="https://www.kaggle.com/nekonyaa" target="_blank" rel="noreferrer" aria-label="Open Kaggle profile in a new tab">Kaggle</a></div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer"><p>Rajas Bhingarde © <span id="year">2026</span></p><p>Evidence-led applied AI and ML engineering portfolio.</p></footer>
+    </div>
 
     <script src="script.js"></script>
 </body>
-</html> 
+</html>

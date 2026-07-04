@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0v80" fill="none" stroke="#b8b1a5" stroke-opacity=".24"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#f3f1ec"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect x="72" y="64" width="1056" height="502" rx="14" fill="#f8f6f1" stroke="#b8b1a5"/>
+  <rect x="72" y="64" width="8" height="502" rx="4" fill="#1f5e63"/>
+  <rect x="120" y="112" width="72" height="72" rx="8" fill="#20272c"/>
+  <text x="156" y="157" text-anchor="middle" fill="#f3f1ec" font-family="monospace" font-size="25" font-weight="700">RB</text>
+  <text x="120" y="248" fill="#1f5e63" font-family="monospace" font-size="20" letter-spacing="3">EARLY-CAREER ML ENGINEER</text>
+  <text x="120" y="322" fill="#1a1f24" font-family="Arial, sans-serif" font-size="50" font-weight="700">Rajas Bhingarde</text>
+  <text x="120" y="380" fill="#49525c" font-family="Arial, sans-serif" font-size="29">Applying AI to technical systems shaped by</text>
+  <text x="120" y="421" fill="#49525c" font-family="Arial, sans-serif" font-size="29">physical constraints and real operating conditions.</text>
+  <line x1="120" y1="484" x2="1080" y2="484" stroke="#b8b1a5"/>
+  <text x="120" y="527" fill="#49525c" font-family="monospace" font-size="18">FORECASTING  /  NLP  /  AUTOMATION  /  SENSOR-INFORMED SYSTEMS</text>
+  <circle cx="1056" cy="145" r="8" fill="#1f5e63"/>
+  <text x="1037" y="151" text-anchor="end" fill="#49525c" font-family="monospace" font-size="16">EVIDENCE-LED</text>
+</svg>
